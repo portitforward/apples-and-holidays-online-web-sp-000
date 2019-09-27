@@ -79,6 +79,7 @@ def all_holidays_with_bbq(holiday_hash)
     for holiday in holidays
       supplies = holidays[holiday]
       if supplies.include?("BBQ")
+        return_list << holiday
         
 
 end
