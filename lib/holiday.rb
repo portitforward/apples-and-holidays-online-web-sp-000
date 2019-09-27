@@ -73,11 +73,13 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  return_list
+  return_list = []
   for season in holiday_hash.keys
     holidays = holiday_hash[season]
     for holiday in holidays
       supplies = holidays[holiday]
+      if supplies.include?("BBQ")
+        
 
 end
 
